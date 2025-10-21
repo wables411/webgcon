@@ -248,46 +248,14 @@ const Home: React.FC = () => {
             <h3 className="video-section-title">
               <span className="cyber-text">// OUR WORK IN ACTION</span>
             </h3>
-            <div className="video-grid">
+            <div className="video-container">
               <video 
                 className="showcase-video" 
                 autoPlay 
                 loop 
                 muted 
                 playsInline
-                src="/webgwork/00001webgcons.MOV"
-              />
-              <video 
-                className="showcase-video" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                src="/webgwork/00002webgcons.MOV"
-              />
-              <video 
-                className="showcase-video" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                src="/webgwork/00003webgcons.MOV"
-              />
-              <video 
-                className="showcase-video" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                src="/webgwork/00004webgcons.MOV"
-              />
-              <video 
-                className="showcase-video" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                src="/webgwork/D1AAA750-4DB1-4C70-9222-26D452C566ED.MOV"
+                src="/webgwork/webgcons.mp4"
               />
             </div>
           </div>
