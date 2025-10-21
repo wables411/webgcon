@@ -176,7 +176,7 @@ const Home: React.FC = () => {
             </h2>
             <p className="section-description">
               Web G Construction is a specialized construction company focused on delivering 
-              quality concrete and stucco work across Texas. As a branch of 
+              quality concrete and stucco work across Texas. As a branch of{' '}
               <a 
                 href="https://webgstrategies.org" 
                 target="_blank" 

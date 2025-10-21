@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               and traditional craftsmanship.
             </p>
             <div className="cyber-accent">
-              <span className="cyber-text">// CONNECTING TEXAS TO THE FUTURE</span>
+              <span className="cyber-text">// PROUDLY SERVING TEXAS</span>
             </div>
           </div>
           
