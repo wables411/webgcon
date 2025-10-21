@@ -58,7 +58,14 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
               <div className="slide-content">
                 <h2 className="slide-title">WEB G CONSTRUCTION</h2>
                 <p className="slide-description">
-                  of Web G Strategies
+                  of <a 
+                    href="https://webgstrategies.org" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="slide-link"
+                  >
+                    Web G Strategies
+                  </a>
                 </p>
               </div>
             </div>
