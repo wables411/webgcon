@@ -200,6 +200,51 @@
   100% { width: 30px; }
 }
 
+.company-info-section {
+  background: var(--light-tan-light);
+  text-align: center;
+}
+
+.company-info-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.company-description {
+  font-size: var(--font-size-lg);
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin-top: var(--spacing-lg);
+}
+
+.company-link {
+  color: var(--red-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.company-link:hover {
+  color: var(--red-secondary);
+  text-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+}
+
+.company-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--red-primary);
+  transition: var(--transition-normal);
+}
+
+.company-link:hover::after {
+  width: 100%;
+}
+
 .values-section {
   background: var(--light-tan-light);
 }

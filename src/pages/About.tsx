@@ -27,7 +27,7 @@ const About: React.FC = () => {
       <Hero
         title="About Web G Construction"
         subtitle="// BUILDING TEXAS'S FUTURE"
-        description="Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State."
+        description="Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State. (A Web G Strategies branch)."
         showButton={false}
       />
       
@@ -74,6 +74,31 @@ const About: React.FC = () => {
                 <div className="connection-line"></div>
                 <div className="connection-line"></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section company-info-section">
+        <div className="container">
+          <div className="company-info-content">
+            <h2 className="section-title">
+              <span className="cyber-text">// COMPANY INFO</span>
+            </h2>
+            <div className="company-description">
+              <p>
+                Web G Construction is a specialized construction company focused on delivering 
+                quality concrete and stucco work across Texas. As a branch of 
+                <a 
+                  href="https://webgstrategies.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="company-link"
+                >
+                  Web G Strategies
+                </a>, we bring together traditional Texas craftsmanship with modern 
+                construction techniques to build the future of the Lone Star State.
+              </p>
             </div>
           </div>
         </div>
