@@ -14,7 +14,13 @@ const Home: React.FC = () => {
     '/webgwork/con6.png',
     '/webgwork/con7.png',
     '/webgwork/con8.png',
-    '/webgwork/con9.png'
+    '/webgwork/con9.png',
+    '/webgwork/con10.png',
+    '/webgwork/con11.png',
+    '/webgwork/con12.png',
+    '/webgwork/con13.png',
+    '/webgwork/con14.png',
+    '/webgwork/con15.png'
   ];
 
   const [formData, setFormData] = useState({
@@ -235,6 +241,55 @@ const Home: React.FC = () => {
                 <p className="value-description">{value.description}</p>
               </motion.div>
             ))}
+          </div>
+
+          {/* Video Showcase Section */}
+          <div className="video-showcase">
+            <h3 className="video-section-title">
+              <span className="cyber-text">// OUR WORK IN ACTION</span>
+            </h3>
+            <div className="video-grid">
+              <video 
+                className="showcase-video" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                src="/webgwork/00001webgcons.MOV"
+              />
+              <video 
+                className="showcase-video" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                src="/webgwork/00002webgcons.MOV"
+              />
+              <video 
+                className="showcase-video" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                src="/webgwork/00003webgcons.MOV"
+              />
+              <video 
+                className="showcase-video" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                src="/webgwork/00004webgcons.MOV"
+              />
+              <video 
+                className="showcase-video" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                src="/webgwork/D1AAA750-4DB1-4C70-9222-26D452C566ED.MOV"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -13,35 +13,42 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
   autoPlay = true 
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [shuffledImages, setShuffledImages] = useState<string[]>([]);
+
+  // Shuffle images on component mount
+  useEffect(() => {
+    const shuffled = [...images].sort(() => Math.random() - 0.5);
+    setShuffledImages(shuffled);
+  }, [images]);
 
   useEffect(() => {
-    if (!autoPlay || images.length <= 1) return;
+    if (!autoPlay || shuffledImages.length <= 1) return;
 
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === shuffledImages.length - 1 ? 0 : prevIndex + 1
       );
     }, interval);
 
     return () => clearInterval(timer);
-  }, [images.length, interval, autoPlay]);
+  }, [shuffledImages.length, interval, autoPlay]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? shuffledImages.length - 1 : currentIndex - 1);
   };
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex === shuffledImages.length - 1 ? 0 : currentIndex + 1);
   };
 
   return (
     <div className="slideshow-container">
       <div className="slideshow-wrapper">
-        {images.map((image, index) => (
+        {shuffledImages.map((image, index) => (
           <div
             key={index}
             className={`slide ${index === currentIndex ? 'active' : ''}`}
@@ -69,7 +76,7 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
 
       {/* Dots Indicator */}
       <div className="slideshow-dots">
-        {images.map((_, index) => (
+        {shuffledImages.map((_, index) => (
           <button
             key={index}
             className={`dot ${index === currentIndex ? 'active' : ''}`}
