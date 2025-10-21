@@ -150,6 +150,33 @@
   font-family: var(--font-secondary);
 }
 
+.footer-link {
+  text-decoration: none;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.footer-link:hover {
+  color: var(--cyber-green);
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.7);
+  transform: scale(1.05);
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--cyber-green);
+  transition: var(--transition-normal);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .footer-content {

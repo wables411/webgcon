@@ -61,7 +61,14 @@ const Footer: React.FC = () => {
               © 2025 Web G Construction. All rights reserved.
             </p>
             <div className="footer-tech">
-              <span className="cyber-text">// POWERED BY INNOVATION</span>
+              <a 
+                href="https://webgstrategies.org" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="cyber-text footer-link"
+              >
+                // POWERED BY WEB G STRATEGIES
+              </a>
             </div>
           </div>
         </div>
