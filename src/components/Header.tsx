@@ -4,6 +4,7 @@ import './Header.css';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isShineActive, setIsShineActive] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,6 +27,14 @@ const Header: React.FC = () => {
       behavior: 'smooth' 
     });
     setIsMenuOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    setIsShineActive(true);
+    setTimeout(() => {
+      setIsShineActive(false);
+    }, 1000); // Animation duration
+    scrollToTop();
   };
 
   // Track active section based on scroll position
@@ -54,8 +63,8 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <button onClick={scrollToTop} className="logo">
-            <span className="logo-text">WEB G CONSTRUCTION</span>
+          <button onClick={handleLogoClick} className="logo">
+            <span className={`logo-text ${isShineActive ? 'shine-active' : ''}`}>WEB G CONSTRUCTION</span>
             <span className="logo-subtitle">Let's Build Texas Together</span>
           </button>
           
