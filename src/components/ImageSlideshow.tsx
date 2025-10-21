@@ -62,21 +62,6 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
                 e.currentTarget.src = '/webgwork/con1.png'; // Fallback to first image
               }}
             />
-            <div className="slide-overlay">
-              <div className="slide-content">
-                <h2 className="slide-title">WEB G CONSTRUCTION</h2>
-                <p className="slide-description">
-                  of <a 
-                    href="https://webgstrategies.org" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="slide-link"
-                  >
-                    Web G Strategies
-                  </a>
-                </p>
-              </div>
-            </div>
           </div>
         ))}
       </div>
