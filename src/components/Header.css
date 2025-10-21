@@ -20,6 +20,11 @@
   flex-direction: column;
   text-decoration: none;
   transition: var(--transition-normal);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
 }
 
 .logo:hover {
@@ -60,6 +65,11 @@
   transition: var(--transition-normal);
   position: relative;
   overflow: hidden;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .nav-link::before {
