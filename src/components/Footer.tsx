@@ -40,7 +40,6 @@ const Footer: React.FC = () => {
                 <span className="contact-label">Offices:</span>
               </p>
               <ul className="office-list">
-                <li>New York City, NY</li>
                 <li>Katy, TX</li>
               </ul>
             </div>

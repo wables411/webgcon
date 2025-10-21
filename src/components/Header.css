@@ -1,7 +1,7 @@
 .header {
-  background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
-  border-bottom: 2px solid var(--cyber-blue);
-  box-shadow: 0 2px 20px rgba(0, 212, 255, 0.2);
+  background: linear-gradient(135deg, var(--light-tan-primary) 0%, var(--light-tan-secondary) 100%);
+  border-bottom: 2px solid var(--red-primary);
+  box-shadow: 0 2px 20px rgba(139, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -29,8 +29,8 @@
 .logo-text {
   font-size: var(--font-size-3xl);
   font-weight: 700;
-  color: var(--texas-tan-primary);
-  text-shadow: 0 0 10px rgba(212, 165, 116, 0.5);
+  color: var(--red-primary);
+  text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
   font-family: var(--font-secondary);
   letter-spacing: 2px;
 }
@@ -51,7 +51,7 @@
 }
 
 .nav-link {
-  color: var(--white);
+  color: var(--dark-gray);
   text-decoration: none;
   font-weight: 500;
   padding: var(--spacing-sm) var(--spacing-md);
@@ -82,10 +82,10 @@
 }
 
 .nav-link.active {
-  color: var(--texas-tan-primary);
-  background: rgba(212, 165, 116, 0.1);
-  border: 1px solid var(--texas-tan-primary);
-  box-shadow: 0 0 10px rgba(212, 165, 116, 0.3);
+  color: var(--red-primary);
+  background: rgba(139, 0, 0, 0.1);
+  border: 1px solid var(--red-primary);
+  box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
 }
 
 .menu-toggle {

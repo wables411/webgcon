@@ -21,26 +21,6 @@ const About: React.FC = () => {
     }
   ];
 
-  const team = [
-    {
-      name: "John Thompson",
-      role: "Founder & CEO",
-      description: "Visionary leader with 20+ years in construction technology",
-      specialty: "Digital Transformation"
-    },
-    {
-      name: "Sarah Chen",
-      role: "CTO",
-      description: "Tech innovator specializing in AI and IoT integration",
-      specialty: "Smart Systems"
-    },
-    {
-      name: "Mike Rodriguez",
-      role: "Head of Operations",
-      description: "Construction veteran ensuring quality and safety standards",
-      specialty: "Project Management"
-    }
-  ];
 
   return (
     <div className="about">
@@ -124,41 +104,6 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <section className="section team-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">
-              <span className="texas-primary">Meet Our</span>
-              <span className="cyber-accent"> Team</span>
-            </h2>
-          </div>
-            
-          <div className="team-grid">
-            {team.map((member, index) => (
-              <div key={index} className="team-card">
-                <div className="team-card-header">
-                  <div className="member-avatar">
-                    <span className="avatar-text">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                  <div className="member-info">
-                    <h3 className="member-name">{member.name}</h3>
-                    <p className="member-role">{member.role}</p>
-                  </div>
-                </div>
-                <div className="team-card-body">
-                  <p className="member-description">{member.description}</p>
-                  <div className="member-specialty">
-                    <span className="specialty-label">Specialty:</span>
-                    <span className="specialty-value cyber-text">{member.specialty}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section vision-section">
         <div className="container">

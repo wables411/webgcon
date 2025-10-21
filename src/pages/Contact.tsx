@@ -109,15 +109,8 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="contact-method">
-                  <h3 className="method-title">Visit Our Offices</h3>
+                  <h3 className="method-title">Visit Our Office</h3>
                   <div className="office-locations">
-                    <div className="office-location">
-                      <span className="location-icon">🏢</span>
-                      <div className="location-details">
-                        <h4>New York City, NY</h4>
-                        <p>East Coast Operations</p>
-                      </div>
-                    </div>
                     <div className="office-location">
                       <span className="location-icon">🤠</span>
                       <div className="location-details">

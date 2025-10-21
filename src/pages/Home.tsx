@@ -1,9 +1,17 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
+import ImageSlideshow from '../components/ImageSlideshow';
 import './Home.css';
 
 const Home: React.FC = () => {
+  const slideshowImages = [
+    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+  ];
+
   const services = [
     {
       title: "Digital Construction",
@@ -43,13 +51,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
-      <Hero
-        title="Building Texas's Digital Future"
-        subtitle="// CONSTRUCTION MEETS CYBERPUNK"
-        description="Web G Construction combines traditional Texas craftsmanship with cutting-edge technology to deliver the most advanced construction solutions in the Lone Star State."
-        buttonText="Start Your Project"
-        buttonLink="/contact"
-      />
+      <ImageSlideshow images={slideshowImages} />
       
       <section className="section intro-section">
         <div className="container">

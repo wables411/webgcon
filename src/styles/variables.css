@@ -1,11 +1,11 @@
 /* Web G Construction - Design System Variables */
 
 :root {
-  /* Texas Tan Colors */
-  --texas-tan-primary: #D4A574;
-  --texas-tan-secondary: #C19A6B;
-  --texas-tan-light: #E6C49A;
-  --texas-tan-dark: #B8956A;
+  /* Light Tan Colors */
+  --light-tan-primary: #F5E6D3;
+  --light-tan-secondary: #E8D5C4;
+  --light-tan-light: #FAF0E6;
+  --light-tan-dark: #D4C4B0;
   
   /* Red Colors */
   --red-primary: #8B0000;
