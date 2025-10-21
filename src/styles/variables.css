@@ -1,0 +1,74 @@
+/* Web G Construction - Design System Variables */
+
+:root {
+  /* Texas Tan Colors */
+  --texas-tan-primary: #D4A574;
+  --texas-tan-secondary: #C19A6B;
+  --texas-tan-light: #E6C49A;
+  --texas-tan-dark: #B8956A;
+  
+  /* Red Colors */
+  --red-primary: #8B0000;
+  --red-secondary: #DC143C;
+  --red-light: #FF6B6B;
+  --red-dark: #5C0000;
+  
+  /* Cyberpunk Accent Colors */
+  --cyber-blue: #00D4FF;
+  --cyber-green: #00FF88;
+  --cyber-purple: #8A2BE2;
+  --cyber-orange: #FF8C00;
+  
+  /* Neutral Colors */
+  --black: #000000;
+  --dark-gray: #1A1A1A;
+  --medium-gray: #333333;
+  --light-gray: #666666;
+  --white: #FFFFFF;
+  --off-white: #F8F8F8;
+  
+  /* Typography */
+  --font-primary: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  --font-secondary: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-cyber: 0 0 20px rgba(0, 212, 255, 0.3);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+  
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
