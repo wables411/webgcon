@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Hero from '../components/Hero';
 import './Contact.css';
 
@@ -13,6 +14,8 @@ const Contact: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errors, setErrors] = useState<{[key: string]: string}>({});
+  const [touched, setTouched] = useState<{[key: string]: boolean}>({});
 
   const serviceOptions = [
     'Concrete Construction',
@@ -26,11 +29,47 @@ const Contact: React.FC = () => {
     'Referral'
   ];
 
+  // Validation function
+  const validateField = (name: string, value: string) => {
+    let error = '';
+    
+    switch (name) {
+      case 'name':
+        if (!value.trim()) error = 'Name is required';
+        else if (value.trim().length < 2) error = 'Name must be at least 2 characters';
+        break;
+      case 'email':
+        if (!value.trim()) error = 'Email is required';
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) error = 'Please enter a valid email';
+        break;
+      case 'hearAbout':
+        if (!value.trim()) error = 'Please tell us how you heard about us';
+        break;
+    }
+    
+    return error;
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
+    }));
+    
+    // Validate field on change
+    const error = validateField(name, value);
+    setErrors(prev => ({
+      ...prev,
+      [name]: error
+    }));
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name } = e.target;
+    setTouched(prev => ({
+      ...prev,
+      [name]: true
     }));
   };
 
@@ -147,9 +186,23 @@ const Contact: React.FC = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="form-input"
+                    onBlur={handleBlur}
+                    className={`form-input ${touched.name && errors.name ? 'error' : ''} ${touched.name && !errors.name ? 'valid' : ''}`}
                     required
                   />
+                  <AnimatePresence>
+                    {touched.name && errors.name && (
+                      <motion.span 
+                        className="error-message"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        {errors.name}
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
                 </div>
                 
                 <div className="form-group">
@@ -160,9 +213,23 @@ const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="form-input"
+                    onBlur={handleBlur}
+                    className={`form-input ${touched.email && errors.email ? 'error' : ''} ${touched.email && !errors.email ? 'valid' : ''}`}
                     required
                   />
+                  <AnimatePresence>
+                    {touched.email && errors.email && (
+                      <motion.span 
+                        className="error-message"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        {errors.email}
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
                 </div>
                 
                 <div className="form-group">

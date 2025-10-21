@@ -1,8 +1,16 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import ImageSlideshow from '../components/ImageSlideshow';
 import './About.css';
 
 const About: React.FC = () => {
+  const slideshowImages = [
+    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+  ];
+
   const values = [
     {
       title: "Quality First",
@@ -24,25 +32,28 @@ const About: React.FC = () => {
 
   return (
     <div className="about">
-      <Hero
-        title="WEB G CONSTRUCTION"
-        subtitle="Let's Build Texas Together"
-        description={
-          <p>
-            Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State. A{' '}
-            <a 
-              href="https://webgstrategies.org" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hero-link"
-            >
-              Web G Strategies
-            </a>{' '}
-            branch.
-          </p>
-        }
-        showButton={false}
-      />
+      <ImageSlideshow images={slideshowImages} />
+      
+      <section className="section hero-content-section">
+        <div className="container">
+          <div className="hero-content">
+            <h1 className="hero-title">WEB G CONSTRUCTION</h1>
+            <h2 className="hero-subtitle">Let's Build Texas Together</h2>
+            <p className="hero-description">
+              Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State. A{' '}
+              <a 
+                href="https://webgstrategies.org" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hero-link"
+              >
+                Web G Strategies
+              </a>{' '}
+              branch.
+            </p>
+          </div>
+        </div>
+      </section>
       
       <section className="section mission-section">
         <div className="container">

@@ -1,9 +1,17 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
+import ImageSlideshow from '../components/ImageSlideshow';
 import './Services.css';
 
 const Services: React.FC = () => {
+  const slideshowImages = [
+    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+  ];
+
   const mainServices = [
     {
       title: "Concrete Construction",
@@ -105,13 +113,22 @@ const Services: React.FC = () => {
 
   return (
     <div className="services">
-      <Hero
-        title="Construction Services"
-        subtitle="// QUALITY SOLUTIONS"
-        description="Professional construction services specializing in concrete work, stucco application, and general construction projects across Texas."
-        buttonText="Get Started"
-        buttonLink="/contact"
-      />
+      <ImageSlideshow images={slideshowImages} />
+      
+      <section className="section hero-content-section">
+        <div className="container">
+          <div className="hero-content">
+            <h1 className="hero-title">Construction Services</h1>
+            <h2 className="hero-subtitle">// QUALITY SOLUTIONS</h2>
+            <p className="hero-description">
+              Professional construction services specializing in concrete work, stucco application, and general construction projects across Texas.
+            </p>
+            <div className="hero-actions">
+              <a href="/contact" className="btn btn-primary btn-large">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
       
       <section className="section main-services">
         <div className="container">
