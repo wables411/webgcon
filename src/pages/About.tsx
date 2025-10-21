@@ -25,8 +25,8 @@ const About: React.FC = () => {
   return (
     <div className="about">
       <Hero
-        title="About Web G Construction"
-        subtitle="// BUILDING TEXAS'S FUTURE"
+        title="WEB G CONSTRUCTION"
+        subtitle="Let's Build Texas Together"
         description="Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State. (A Web G Strategies branch)."
         showButton={false}
       />
