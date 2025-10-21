@@ -292,39 +292,16 @@ const Home: React.FC = () => {
       {/* Contact Section */}
       <section id="contact" className="section contact-section">
         <div className="container">
-          <div className="contact-content">
-            <div className="contact-info">
-              <h2 className="section-title">
-                <span className="cyber-text">// GET IN TOUCH</span>
-              </h2>
-              <p className="contact-description">
-                Ready to start your construction project? Contact us today for a free consultation and estimate.
-              </p>
-              
-              <div className="contact-methods">
-                <div className="contact-method">
-                  <h3 className="method-title">Email Us</h3>
-                  <a href="mailto:jt@webgstrategies.org" className="contact-link">
-                    jt@webgstrategies.org
-                  </a>
-                </div>
-                
-                <div className="contact-method">
-                  <h3 className="method-title">Visit Our Office</h3>
-                  <div className="office-locations">
-                    <div className="office-location">
-                      <span className="location-icon">🤠</span>
-                      <div className="location-details">
-                        <h4>Katy, TX</h4>
-                        <p>Texas Headquarters</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="contact-form-container">
+          <div className="section-header">
+            <h2 className="section-title">
+              <span className="cyber-text">// GET IN TOUCH</span>
+            </h2>
+            <p className="section-description">
+              Ready to start your construction project? Contact us today for a free consultation and estimate.
+            </p>
+          </div>
+          
+          <div className="contact-form-container-wide">
               <form 
                 name="contact" 
                 method="POST" 
@@ -341,30 +318,32 @@ const Home: React.FC = () => {
                   </label>
                 </div>
                 
-                <div className="form-group">
-                  <label htmlFor="name" className="form-label">Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="form-input"
-                    required
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="email" className="form-label">Email *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="form-input"
-                    required
-                  />
+                <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="name" className="form-label">Name *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="form-input"
+                      required
+                    />
+                  </div>
+                  
+                  <div className="form-group">
+                    <label htmlFor="email" className="form-label">Email *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="form-input"
+                      required
+                    />
+                  </div>
                 </div>
                 
                 <div className="form-group">
@@ -436,6 +415,29 @@ const Home: React.FC = () => {
                   </div>
                 )}
               </form>
+          </div>
+          
+          <div className="contact-info-section">
+            <div className="contact-methods">
+              <div className="contact-method">
+                <h3 className="method-title">Email Us</h3>
+                <a href="mailto:jt@webgstrategies.org" className="contact-link">
+                  jt@webgstrategies.org
+                </a>
+              </div>
+              
+              <div className="contact-method">
+                <h3 className="method-title">Visit Our Office</h3>
+                <div className="office-locations">
+                  <div className="office-location">
+                    <span className="location-icon">🤠</span>
+                    <div className="location-details">
+                      <h4>Katy, TX</h4>
+                      <p>Texas Headquarters</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
