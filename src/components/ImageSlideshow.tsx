@@ -56,9 +56,9 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
           >
             <div className="slide-overlay">
               <div className="slide-content">
-                <h2 className="slide-title">Building Texas's Digital Future</h2>
+                <h2 className="slide-title">WEB G CONSTRUCTION</h2>
                 <p className="slide-description">
-                  Where traditional craftsmanship meets cutting-edge technology
+                  Let's Build Texas Together
                 </p>
               </div>
             </div>
