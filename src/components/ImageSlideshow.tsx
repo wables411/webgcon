@@ -52,8 +52,16 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
           <div
             key={index}
             className={`slide ${index === currentIndex ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${image})` }}
           >
+            <img
+              src={image}
+              alt={`Construction project ${index + 1}`}
+              className="slide-image"
+              onError={(e) => {
+                console.error(`Failed to load image: ${image}`);
+                e.currentTarget.src = '/webgwork/con1.png'; // Fallback to first image
+              }}
+            />
             <div className="slide-overlay">
               <div className="slide-content">
                 <h2 className="slide-title">WEB G CONSTRUCTION</h2>
