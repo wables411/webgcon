@@ -1,46 +1,117 @@
-# Getting Started with Create React App
+# Web G Construction Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, cyberpunk-inspired construction company website built with React and deployed on Netlify.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Cyberpunk Aesthetic**: Texas tan and red color scheme with subtle tech elements
+- **Responsive Design**: Mobile-first approach with smooth animations
+- **Netlify Forms**: Contact form with form handling
+- **Modern Tech Stack**: React, TypeScript, CSS modules
+- **Professional Content**: Construction industry focused with digital transformation theme
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 18 with TypeScript
+- React Router for navigation
+- CSS with custom properties and animations
+- Netlify for hosting and forms
+- GitHub for version control
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pages
 
-### `npm test`
+- **Home**: Hero section, company overview, core services preview
+- **About Us**: Company mission, values, team information
+- **Services**: Detailed service offerings with process timeline
+- **Contact**: Contact form with Netlify integration, office locations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design System
 
-### `npm run build`
+### Colors
+- **Texas Tan**: #D4A574 (primary), #C19A6B (secondary)
+- **Red**: #8B0000 (primary), #DC143C (secondary)
+- **Cyberpunk Accents**: #00D4FF (blue), #00FF88 (green)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Typography
+- **Primary**: Inter (modern, clean)
+- **Secondary**: JetBrains Mono (tech/code aesthetic)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Netlify Deployment
 
-### `npm run eject`
+1. **Connect Repository**:
+   - Go to [Netlify](https://app.netlify.com/teams/wables411/projects)
+   - Click "New site from Git"
+   - Connect to GitHub repository: `wables411/webgcon`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. **Build Settings**:
+   - Build command: `npm run build`
+   - Publish directory: `build`
+   - Node version: 18
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Environment Variables** (if needed):
+   - No environment variables required for basic deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. **Form Handling**:
+   - Netlify Forms are automatically enabled
+   - Form submissions will appear in Netlify dashboard
+   - Form name: `contact`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Local Development
 
-## Learn More
+```bash
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start development server
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Build for production
+npm run build
+
+# Test production build locally
+npm install -g serve
+serve -s build
+```
+
+## Form Configuration
+
+The contact form includes:
+- Name (required)
+- Email (required)
+- Services Interested In (checkboxes):
+  - Digital Construction Management
+  - Smart Building Integration
+  - Advanced Tech Integration
+- How Did You Hear About Us (dropdown):
+  - Google Search
+  - Social Media
+  - Referral
+- Message (optional)
+
+## Customization
+
+### Colors
+Edit `src/styles/variables.css` to modify the color scheme.
+
+### Content
+- Home page: `src/pages/Home.tsx`
+- About page: `src/pages/About.tsx`
+- Services page: `src/pages/Services.tsx`
+- Contact page: `src/pages/Contact.tsx`
+
+### Styling
+- Global styles: `src/styles/global.css`
+- Component styles: Individual CSS files in component directories
+
+## Contact Information
+
+- **Email**: jt@webgstrategies.org
+- **Offices**: 
+  - New York City, NY
+  - Katy, TX
+
+## License
+
+© 2025 Web G Construction. All rights reserved.
