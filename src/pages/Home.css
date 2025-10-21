@@ -245,9 +245,17 @@
   margin-top: var(--spacing-3xl);
   justify-items: center;
   align-items: start;
-  max-width: 100%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 var(--spacing-md);
+}
+
+.services-grid .service-card {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  justify-self: center;
 }
 
 /* Mobile: Stack all services vertically */
@@ -257,6 +265,12 @@
     gap: var(--spacing-xl);
     margin-top: var(--spacing-2xl);
     padding: 0 var(--spacing-md);
+    max-width: 100%;
+  }
+  
+  .services-grid .service-card {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
