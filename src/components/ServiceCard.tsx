@@ -70,7 +70,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         >
-          <span className="cyber-text">// READY TO DEPLOY</span>
+          <span className="cyber-text">{'// READY TO DEPLOY'}</span>
         </motion.div>
       </div>
     </motion.div>

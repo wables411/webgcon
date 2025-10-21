@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               and traditional craftsmanship.
             </p>
             <div className="cyber-accent">
-              <span className="cyber-text">// PROUDLY SERVING TEXAS</span>
+              <span className="cyber-text">{'// PROUDLY SERVING TEXAS'}</span>
             </div>
           </div>
           
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="cyber-text footer-link"
               >
-                // POWERED BY WEB G STRATEGIES
+                {'// POWERED BY WEB G STRATEGIES'}
               </a>
             </div>
           </div>

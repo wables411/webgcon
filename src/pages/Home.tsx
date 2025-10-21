@@ -195,7 +195,7 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">
-              <span className="cyber-text">// ABOUT US</span>
+              <span className="cyber-text">{'// ABOUT US'}</span>
             </h2>
             <p className="section-description">
               Web G Construction is a specialized construction company focused on delivering 
@@ -246,7 +246,7 @@ const Home: React.FC = () => {
           {/* Video Showcase Section */}
           <div className="video-showcase">
             <h3 className="video-section-title">
-              <span className="cyber-text">// OUR WORK IN ACTION</span>
+              <span className="cyber-text">{'// OUR WORK IN ACTION'}</span>
             </h3>
             <div className="video-container">
               <video 
@@ -267,7 +267,7 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">
-              <span className="cyber-text">// OUR SERVICES</span>
+              <span className="cyber-text">{'// OUR SERVICES'}</span>
             </h2>
             <p className="section-description">
               Professional construction services specializing in concrete work, stucco application, and general construction projects across Texas.
@@ -294,7 +294,7 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">
-              <span className="cyber-text">// GET IN TOUCH</span>
+              <span className="cyber-text">{'// GET IN TOUCH'}</span>
             </h2>
             <p className="section-description">
               Ready to start your construction project? Contact us today for a free consultation and estimate.
