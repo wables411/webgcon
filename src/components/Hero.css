@@ -50,6 +50,34 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.hero-link {
+  color: var(--cyber-blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.hero-link:hover {
+  color: var(--cyber-green);
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.7);
+}
+
+.hero-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--cyber-green);
+  transition: var(--transition-normal);
+}
+
+.hero-link:hover::after {
+  width: 100%;
+}
+
 .hero-actions {
   display: flex;
   gap: var(--spacing-lg);

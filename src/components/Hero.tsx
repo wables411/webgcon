@@ -5,7 +5,7 @@ import './Hero.css';
 interface HeroProps {
   title: string;
   subtitle?: string;
-  description?: string;
+  description?: string | React.ReactNode;
   showButton?: boolean;
   buttonText?: string;
   buttonLink?: string;
@@ -35,9 +35,9 @@ const Hero: React.FC<HeroProps> = ({
               {title}
             </h1>
             {description && (
-              <p className="hero-description">
+              <div className="hero-description">
                 {description}
-              </p>
+              </div>
             )}
             {showButton && (
               <div className="hero-actions">

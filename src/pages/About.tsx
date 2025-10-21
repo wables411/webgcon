@@ -27,7 +27,20 @@ const About: React.FC = () => {
       <Hero
         title="WEB G CONSTRUCTION"
         subtitle="Let's Build Texas Together"
-        description="Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State. A Web G Strategies branch."
+        description={
+          <p>
+            Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State. A{' '}
+            <a 
+              href="https://webgstrategies.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hero-link"
+            >
+              Web G Strategies
+            </a>{' '}
+            branch.
+          </p>
+        }
         showButton={false}
       />
       
