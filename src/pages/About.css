@@ -3,7 +3,7 @@
 }
 
 .mission-section {
-  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
+  background: linear-gradient(135deg, var(--light-tan-secondary) 0%, var(--light-tan-primary) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -201,7 +201,7 @@
 }
 
 .values-section {
-  background: var(--black);
+  background: var(--light-tan-light);
 }
 
 .section-header {
@@ -271,7 +271,7 @@
 }
 
 .team-section {
-  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
+  background: linear-gradient(135deg, var(--light-tan-primary) 0%, var(--light-tan-secondary) 100%);
 }
 
 .team-grid {
@@ -354,7 +354,7 @@
 }
 
 .vision-section {
-  background: var(--black);
+  background: var(--light-tan-light);
   text-align: center;
 }
 

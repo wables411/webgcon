@@ -204,7 +204,7 @@ a:hover {
 .form-label {
   display: block;
   margin-bottom: var(--spacing-sm);
-  color: var(--texas-tan-light);
+  color: var(--red-primary);
   font-weight: 500;
 }
 
@@ -213,10 +213,10 @@ a:hover {
 .form-select {
   width: 100%;
   padding: var(--spacing-md);
-  border: 2px solid var(--medium-gray);
+  border: 2px solid var(--light-tan-dark);
   border-radius: var(--radius-md);
-  background-color: var(--dark-gray);
-  color: var(--white);
+  background-color: var(--light-tan-light);
+  color: var(--dark-gray);
   font-family: var(--font-primary);
   transition: var(--transition-normal);
 }
@@ -243,11 +243,11 @@ a:hover {
 
 /* Cards */
 .card {
-  background: var(--dark-gray);
+  background: var(--light-tan-light);
   border-radius: var(--radius-lg);
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-md);
-  border: 1px solid var(--medium-gray);
+  border: 1px solid var(--light-tan-dark);
   transition: var(--transition-normal);
 }
 

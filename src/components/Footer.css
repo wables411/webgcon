@@ -1,7 +1,7 @@
 .footer {
-  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
-  border-top: 2px solid var(--cyber-blue);
-  box-shadow: 0 -2px 20px rgba(0, 212, 255, 0.2);
+  background: linear-gradient(135deg, var(--light-tan-secondary) 0%, var(--light-tan-primary) 100%);
+  border-top: 2px solid var(--red-primary);
+  box-shadow: 0 -2px 20px rgba(139, 0, 0, 0.2);
   margin-top: var(--spacing-3xl);
 }
 
@@ -19,10 +19,10 @@
 
 .footer-title {
   font-size: var(--font-size-2xl);
-  color: var(--texas-tan-primary);
+  color: var(--red-primary);
   margin-bottom: var(--spacing-md);
   font-family: var(--font-secondary);
-  text-shadow: 0 0 10px rgba(212, 165, 116, 0.3);
+  text-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
 }
 
 .footer-subtitle {

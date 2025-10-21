@@ -3,7 +3,7 @@
 }
 
 .contact-section {
-  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
+  background: linear-gradient(135deg, var(--light-tan-secondary) 0%, var(--light-tan-primary) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -120,8 +120,8 @@
 }
 
 .contact-form-container {
-  background: var(--dark-gray);
-  border: 2px solid var(--medium-gray);
+  background: var(--light-tan-light);
+  border: 2px solid var(--light-tan-dark);
   border-radius: var(--radius-lg);
   padding: var(--spacing-2xl);
   position: relative;

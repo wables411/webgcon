@@ -1,6 +1,6 @@
 .service-card {
-  background: var(--dark-gray);
-  border: 2px solid var(--medium-gray);
+  background: var(--light-tan-light);
+  border: 2px solid var(--light-tan-dark);
   border-radius: var(--radius-lg);
   padding: var(--spacing-xl);
   transition: var(--transition-normal);
@@ -33,13 +33,13 @@
 }
 
 .service-card.highlighted {
-  border-color: var(--texas-tan-primary);
-  background: linear-gradient(135deg, var(--dark-gray) 0%, rgba(212, 165, 116, 0.05) 100%);
+  border-color: var(--red-primary);
+  background: linear-gradient(135deg, var(--light-tan-light) 0%, rgba(139, 0, 0, 0.05) 100%);
 }
 
 .service-card.highlighted:hover {
-  border-color: var(--texas-tan-primary);
-  box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+  border-color: var(--red-primary);
+  box-shadow: 0 10px 30px rgba(139, 0, 0, 0.3);
 }
 
 .service-card-header {
@@ -63,7 +63,7 @@
 
 .service-title {
   font-size: var(--font-size-xl);
-  color: var(--white);
+  color: var(--dark-gray);
   margin: 0;
   flex: 1;
 }
@@ -74,7 +74,7 @@
 }
 
 .service-description {
-  color: var(--light-gray);
+  color: var(--dark-gray);
   line-height: 1.6;
   margin-bottom: var(--spacing-md);
 }
@@ -90,7 +90,7 @@
   align-items: center;
   gap: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
-  color: var(--light-gray);
+  color: var(--dark-gray);
   font-size: var(--font-size-sm);
 }
 
@@ -103,7 +103,7 @@
 .service-card-footer {
   margin-top: auto;
   padding-top: var(--spacing-md);
-  border-top: 1px solid var(--medium-gray);
+  border-top: 1px solid var(--light-tan-dark);
 }
 
 .cyber-accent {
