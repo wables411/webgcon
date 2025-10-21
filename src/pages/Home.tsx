@@ -42,6 +42,17 @@ const Home: React.FC = () => {
       isHighlighted: true
     },
     {
+      title: "Concrete Pool Installation",
+      description: "Professional concrete pool construction and installation services. We build durable, custom concrete pools that provide years of enjoyment for Texas families.",
+      icon: "🏊‍♂️",
+      features: [
+        "Custom pool design",
+        "Concrete pool construction",
+        "Pool deck installation",
+        "Pool renovation and repair"
+      ]
+    },
+    {
       title: "Stucco & Exterior Finishes",
       description: "Professional stucco application and exterior finishing services. We provide durable, weather-resistant finishes that enhance your property's appearance.",
       icon: "🎨",
@@ -85,6 +96,7 @@ const Home: React.FC = () => {
 
   const serviceOptions = [
     'Concrete Construction',
+    'Concrete Pool Installation',
     'Stucco & Exterior Finishes', 
     'General Construction'
   ];
