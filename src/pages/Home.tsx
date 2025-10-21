@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import ServiceCard from '../components/ServiceCard';
 import ImageSlideshow from '../components/ImageSlideshow';
 import './Home.css';

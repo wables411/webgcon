@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './ServiceCard.css';
 
 interface ServiceCardProps {
@@ -17,12 +18,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   isHighlighted = false
 }) => {
   return (
-    <div className={`service-card ${isHighlighted ? 'highlighted' : ''}`}>
+    <motion.div 
+      className={`service-card ${isHighlighted ? 'highlighted' : ''}`}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{ 
+        y: -8,
+        transition: { duration: 0.3, ease: "easeOut" }
+      }}
+    >
       <div className="service-card-header">
         {icon && (
-          <div className="service-icon">
+          <motion.div 
+            className="service-icon"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ duration: 0.2 }}
+          >
             <span className="cyber-text">{icon}</span>
-          </div>
+          </motion.div>
         )}
         <h3 className="service-title">{title}</h3>
       </div>
@@ -33,21 +48,32 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         {features.length > 0 && (
           <ul className="service-features">
             {features.map((feature, index) => (
-              <li key={index} className="service-feature">
+              <motion.li 
+                key={index} 
+                className="service-feature"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+              >
                 <span className="feature-marker">▶</span>
                 {feature}
-              </li>
+              </motion.li>
             ))}
           </ul>
         )}
       </div>
       
       <div className="service-card-footer">
-        <div className="cyber-accent">
+        <motion.div 
+          className="cyber-accent"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        >
           <span className="cyber-text">// READY TO DEPLOY</span>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

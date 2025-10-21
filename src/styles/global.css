@@ -14,6 +14,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Enhanced scroll behavior */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Interactive form elements */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+  border-color: var(--cyber-blue);
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, input, textarea, select {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
@@ -164,23 +183,62 @@ a:hover {
   background: linear-gradient(45deg, var(--light-tan-primary), var(--light-tan-secondary));
   color: var(--dark-gray);
   box-shadow: var(--shadow-md);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(139, 0, 0, 0.2);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--cyber-blue);
   border: 2px solid var(--cyber-blue);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--cyber-blue);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn-secondary:hover::before {
+  width: 100%;
 }
 
 .btn-secondary:hover {
-  background: var(--cyber-blue);
-  color: var(--dark-gray);
-  box-shadow: var(--shadow-cyber);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
 }
 
 .btn-cyber {
