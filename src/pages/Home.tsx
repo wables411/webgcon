@@ -15,12 +15,7 @@ const Home: React.FC = () => {
     '/webgwork/con7.png',
     '/webgwork/con8.png',
     '/webgwork/con9.png',
-    '/webgwork/con10.png',
-    '/webgwork/con11.png',
-    '/webgwork/con12.png',
-    '/webgwork/con13.png',
-    '/webgwork/con14.png',
-    '/webgwork/con15.png'
+    '/webgwork/con10.png'
   ];
 
   const [formData, setFormData] = useState({
