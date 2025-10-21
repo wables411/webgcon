@@ -19,8 +19,8 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            <span className="logo-text">Web G</span>
-            <span className="logo-subtitle">Construction</span>
+            <span className="logo-text">WEB G CONSTRUCTION</span>
+            <span className="logo-subtitle">Let's Build Texas Together</span>
           </Link>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>

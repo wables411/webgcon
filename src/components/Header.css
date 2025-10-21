@@ -28,20 +28,21 @@
 
 .logo-text {
   font-size: var(--font-size-3xl);
-  font-weight: 700;
+  font-weight: 900;
   color: var(--red-primary);
   text-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
-  font-family: var(--font-secondary);
-  letter-spacing: 2px;
+  font-family: var(--font-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .logo-subtitle {
   font-size: var(--font-size-sm);
-  color: var(--cyber-blue);
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  color: var(--dark-gray);
+  text-transform: none;
+  letter-spacing: 1px;
   margin-top: -5px;
-  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+  font-weight: 500;
 }
 
 .nav {
@@ -154,9 +155,11 @@
 
   .logo-text {
     font-size: var(--font-size-2xl);
+    font-weight: 900;
   }
 
   .logo-subtitle {
     font-size: var(--font-size-xs);
+    font-weight: 500;
   }
 }
