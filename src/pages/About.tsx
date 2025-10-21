@@ -131,32 +131,31 @@ const About: React.FC = () => {
               <span className="texas-primary">Meet Our</span>
               <span className="cyber-accent"> Team</span>
             </h2>
-            </div>
+          </div>
             
-            <div className="team-grid">
-              {team.map((member, index) => (
-                <div key={index} className="team-card">
-                  <div className="team-card-header">
-                    <div className="member-avatar">
-                      <span className="avatar-text">
-                        {member.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                    <div className="member-info">
-                      <h3 className="member-name">{member.name}</h3>
-                      <p className="member-role">{member.role}</p>
-                    </div>
+          <div className="team-grid">
+            {team.map((member, index) => (
+              <div key={index} className="team-card">
+                <div className="team-card-header">
+                  <div className="member-avatar">
+                    <span className="avatar-text">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </span>
                   </div>
-                  <div className="team-card-body">
-                    <p className="member-description">{member.description}</p>
-                    <div className="member-specialty">
-                      <span className="specialty-label">Specialty:</span>
-                      <span className="specialty-value cyber-text">{member.specialty}</span>
-                    </div>
+                  <div className="member-info">
+                    <h3 className="member-name">{member.name}</h3>
+                    <p className="member-role">{member.role}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+                <div className="team-card-body">
+                  <p className="member-description">{member.description}</p>
+                  <div className="member-specialty">
+                    <span className="specialty-label">Specialty:</span>
+                    <span className="specialty-value cyber-text">{member.specialty}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
