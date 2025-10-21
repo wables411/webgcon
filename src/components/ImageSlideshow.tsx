@@ -62,6 +62,13 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
                 e.currentTarget.src = '/webgwork/con1.png'; // Fallback to first image
               }}
             />
+            <div className="slide-logo-overlay">
+              <img 
+                src="/webglogo.png" 
+                alt="Web G Construction Logo" 
+                className="slide-logo"
+              />
+            </div>
           </div>
         ))}
       </div>
