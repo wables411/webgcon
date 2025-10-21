@@ -6,109 +6,109 @@ import './Services.css';
 const Services: React.FC = () => {
   const mainServices = [
     {
-      title: "Digital Construction Management",
-      description: "Revolutionary project management using AI, IoT, and advanced analytics to optimize every aspect of your construction projects from planning to completion.",
-      icon: "⚡",
+      title: "Concrete Construction",
+      description: "Expert concrete work including foundations, driveways, patios, and structural elements. We specialize in both residential and commercial concrete projects.",
+      icon: "🏗️",
       features: [
-        "AI-powered project scheduling",
-        "Real-time progress tracking",
-        "Predictive cost analysis",
-        "Automated quality control",
-        "Resource optimization",
-        "Risk assessment and mitigation"
+        "Foundation construction",
+        "Driveway installation",
+        "Patio and walkway creation",
+        "Concrete repair and restoration",
+        "Stamped concrete designs",
+        "Structural concrete work"
       ],
       isHighlighted: true
     },
     {
-      title: "Smart Building Integration",
-      description: "Transform your buildings into intelligent, connected environments that adapt to your needs and optimize energy efficiency through cutting-edge IoT technology.",
-      icon: "🏗️",
+      title: "Stucco & Exterior Finishes",
+      description: "Professional stucco application and exterior finishing services. We provide durable, weather-resistant finishes that enhance your property's appearance.",
+      icon: "🏠",
       features: [
-        "IoT sensor integration",
-        "Energy management systems",
-        "Automated building controls",
-        "Smart security systems",
-        "Environmental monitoring",
-        "Predictive maintenance"
+        "Stucco application and repair",
+        "Exterior painting",
+        "Weatherproofing",
+        "Texture matching",
+        "Color consultation",
+        "Maintenance services"
       ]
     },
     {
-      title: "Advanced Tech Integration",
-      description: "Seamlessly integrate cutting-edge technology into existing construction processes without disrupting your workflow, ensuring smooth digital transformation.",
-      icon: "🔧",
+      title: "General Construction",
+      description: "Complete construction services from planning to completion. We handle everything from small repairs to major renovations and new construction.",
+      icon: "🔨",
       features: [
-        "Legacy system integration",
-        "Custom software development",
-        "Cloud infrastructure setup",
-        "Data migration services",
-        "Training and support",
-        "Ongoing maintenance"
+        "New construction",
+        "Renovation projects",
+        "Kitchen and bathroom remodeling",
+        "Roofing and siding",
+        "Flooring installation",
+        "Project management"
       ]
     }
   ];
 
   const additionalServices = [
     {
-      title: "Virtual Reality Planning",
-      description: "Experience your project before it's built with immersive VR technology that allows you to walk through and modify designs in real-time.",
-      icon: "🥽"
+      title: "Foundation Repair",
+      description: "Professional foundation repair and stabilization services to ensure your property's structural integrity.",
+      icon: "🏗️"
     },
     {
-      title: "Drone Surveying",
-      description: "High-precision aerial surveying and monitoring using advanced drone technology for accurate site analysis and progress tracking.",
-      icon: "🚁"
+      title: "Concrete Staining",
+      description: "Decorative concrete staining and coloring services to enhance the appearance of your concrete surfaces.",
+      icon: "🎨"
     },
     {
-      title: "3D Printing Solutions",
-      description: "Revolutionary 3D printing technology for rapid prototyping, custom components, and innovative construction materials.",
-      icon: "🖨️"
+      title: "Stucco Texturing",
+      description: "Custom stucco texturing and finish work to create unique exterior appearances for your property.",
+      icon: "🏠"
     },
     {
-      title: "Blockchain Documentation",
-      description: "Secure, tamper-proof project documentation and contract management using blockchain technology for complete transparency.",
-      icon: "⛓️"
-    },
-    {
-      title: "AI Safety Monitoring",
-      description: "Advanced AI-powered safety systems that monitor job sites 24/7 to prevent accidents and ensure compliance with safety regulations.",
+      title: "Concrete Sealing",
+      description: "Protective concrete sealing services to extend the life and appearance of your concrete surfaces.",
       icon: "🛡️"
     },
     {
-      title: "Green Tech Solutions",
-      description: "Sustainable construction technologies including solar integration, energy storage, and eco-friendly building materials.",
-      icon: "🌱"
+      title: "Exterior Painting",
+      description: "Professional exterior painting services with weather-resistant coatings for long-lasting protection.",
+      icon: "🎨"
+    },
+    {
+      title: "Concrete Cutting",
+      description: "Precision concrete cutting and drilling services for modifications and installations.",
+      icon: "⚡"
     }
   ];
 
   const processSteps = [
     {
       step: "01",
-      title: "Discovery & Analysis",
-      description: "We analyze your current systems and identify opportunities for digital transformation."
+      title: "Consultation & Planning",
+      description: "We meet with you to understand your project needs and develop a detailed construction plan."
     },
     {
       step: "02", 
-      title: "Strategy Development",
-      description: "Custom digital strategy tailored to your specific needs and goals."
+      title: "Material Selection",
+      description: "Choose the right materials and finishes for your project, ensuring quality and durability."
     },
     {
       step: "03",
-      title: "Implementation",
-      description: "Seamless integration of technology solutions with minimal disruption."
+      title: "Construction",
+      description: "Professional construction work with skilled craftsmen and attention to detail."
     },
     {
       step: "04",
-      title: "Optimization",
-      description: "Continuous monitoring and optimization to ensure maximum efficiency."
+      title: "Final Inspection",
+      description: "Thorough quality inspection and cleanup to ensure your project meets our high standards."
     }
   ];
 
   return (
     <div className="services">
       <Hero
-        title="Digital Construction Services"
-        subtitle="// CUTTING-EDGE SOLUTIONS"
-        description="Revolutionary construction technology that transforms how buildings are designed, built, and managed in the digital age."
+        title="Construction Services"
+        subtitle="// QUALITY SOLUTIONS"
+        description="Professional construction services specializing in concrete work, stucco application, and general construction projects across Texas."
         buttonText="Get Started"
         buttonLink="/contact"
       />
@@ -120,7 +120,7 @@ const Services: React.FC = () => {
               <span className="cyber-text">// CORE SERVICES</span>
             </h2>
             <p className="section-description">
-              Comprehensive digital construction solutions powered by the latest technology
+              Comprehensive construction services with a focus on quality materials and skilled craftsmanship
             </p>
           </div>
           
@@ -199,10 +199,10 @@ const Services: React.FC = () => {
         <div className="container">
           <div className="cta-content">
             <h2 className="cta-title">
-              Ready to Transform Your Construction Process?
+              Ready to Start Your Construction Project?
             </h2>
             <p className="cta-description">
-              Let's discuss how our digital solutions can revolutionize your next project.
+              Let's discuss how our construction expertise can bring your vision to life.
             </p>
             <div className="cta-actions">
               <a href="/contact" className="btn btn-cyber btn-large">

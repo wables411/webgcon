@@ -48,9 +48,9 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4 className="footer-subtitle">Services</h4>
             <ul className="service-list">
-              <li>Digital Construction</li>
-              <li>Smart Building Solutions</li>
-              <li>Tech Integration</li>
+              <li>Concrete Construction</li>
+              <li>Stucco & Exterior Finishes</li>
+              <li>General Construction</li>
             </ul>
           </div>
         </div>

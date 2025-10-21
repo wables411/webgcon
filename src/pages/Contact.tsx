@@ -15,9 +15,9 @@ const Contact: React.FC = () => {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const serviceOptions = [
-    'Digital Construction Management',
-    'Smart Building Integration', 
-    'Advanced Tech Integration'
+    'Concrete Construction',
+    'Stucco & Exterior Finishes', 
+    'General Construction'
   ];
 
   const hearAboutOptions = [

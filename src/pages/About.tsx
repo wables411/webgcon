@@ -5,9 +5,9 @@ import './About.css';
 const About: React.FC = () => {
   const values = [
     {
-      title: "Innovation First",
-      description: "We embrace cutting-edge technology while respecting traditional construction values, creating the perfect fusion of past and future.",
-      icon: "🚀"
+      title: "Quality First",
+      description: "We use only the finest materials and proven construction techniques, ensuring every project meets the highest standards of quality and durability.",
+      icon: "🏗️"
     },
     {
       title: "Texas Pride",
@@ -15,9 +15,9 @@ const About: React.FC = () => {
       icon: "🤠"
     },
     {
-      title: "Digital Excellence",
-      description: "Every project is executed with precision, using advanced digital tools and methodologies to ensure superior results.",
-      icon: "⚡"
+      title: "Craftsmanship Excellence",
+      description: "Every project is executed with precision and attention to detail, using skilled craftsmen and time-tested construction methods.",
+      icon: "🔨"
     }
   ];
 
@@ -26,8 +26,8 @@ const About: React.FC = () => {
     <div className="about">
       <Hero
         title="About Web G Construction"
-        subtitle="// BUILDING TEXAS'S DIGITAL FUTURE"
-        description="Where traditional Texas craftsmanship meets cutting-edge technology to create the construction company of tomorrow."
+        subtitle="// BUILDING TEXAS'S FUTURE"
+        description="Where traditional Texas craftsmanship meets modern construction techniques to deliver quality projects across the Lone Star State."
         showButton={false}
       />
       
@@ -40,15 +40,15 @@ const About: React.FC = () => {
               </h2>
               <p className="mission-description">
                 We grow our people to grow our company. At Web G Construction, we believe that 
-                the future of construction lies in the seamless integration of technology and 
-                human expertise. We're not just building structures – we're building the 
-                digital infrastructure that will power Texas for generations to come.
+                quality construction starts with skilled craftsmen and the right materials. 
+                We're not just building structures – we're building the foundations, walls, 
+                and finishes that will stand the test of time across Texas.
               </p>
               <div className="mission-highlight">
                 <span className="cyber-text">// MISSION STATEMENT</span>
                 <p className="highlight-text">
-                  "To revolutionize construction through technology while maintaining the 
-                  integrity and craftsmanship that Texas is known for."
+                  "To deliver exceptional construction services through skilled craftsmanship 
+                  and quality materials while maintaining the integrity that Texas is known for."
                 </p>
               </div>
             </div>
@@ -58,16 +58,16 @@ const About: React.FC = () => {
                   <span>Web G</span>
                 </div>
                 <div className="diagram-node">
-                  <span>AI</span>
+                  <span>Concrete</span>
                 </div>
                 <div className="diagram-node">
-                  <span>IoT</span>
+                  <span>Stucco</span>
                 </div>
                 <div className="diagram-node">
-                  <span>Cloud</span>
+                  <span>Build</span>
                 </div>
                 <div className="diagram-node">
-                  <span>Analytics</span>
+                  <span>Finish</span>
                 </div>
                 <div className="connection-line"></div>
                 <div className="connection-line"></div>
@@ -117,9 +117,9 @@ const About: React.FC = () => {
               </p>
               <ul className="vision-list">
                 <li>Putting our employees' health and safety above all else</li>
-                <li>Exceeding the expectations of our clients through innovation</li>
+                <li>Exceeding the expectations of our clients through quality workmanship</li>
                 <li>Striving for operational excellence in every project</li>
-                <li>Building the digital infrastructure of tomorrow</li>
+                <li>Building structures that stand the test of time</li>
               </ul>
             </div>
           </div>

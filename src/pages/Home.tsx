@@ -13,37 +13,37 @@ const Home: React.FC = () => {
 
   const services = [
     {
-      title: "Digital Construction",
-      description: "Revolutionary construction technology that integrates AI, IoT, and advanced analytics to optimize every aspect of your building projects.",
-      icon: "⚡",
+      title: "Concrete Construction",
+      description: "Expert concrete work including foundations, driveways, patios, and structural elements. We specialize in both residential and commercial concrete projects.",
+      icon: "🏗️",
       features: [
-        "AI-powered project management",
-        "Real-time progress tracking",
-        "Predictive analytics",
-        "Automated quality control"
+        "Foundation construction",
+        "Driveway installation",
+        "Patio and walkway creation",
+        "Concrete repair and restoration"
       ],
       isHighlighted: true
     },
     {
-      title: "Smart Building Solutions",
-      description: "Transform your buildings into intelligent, connected environments that adapt to your needs and optimize energy efficiency.",
-      icon: "🏗️",
+      title: "Stucco & Exterior Finishes",
+      description: "Professional stucco application and exterior finishing services. We provide durable, weather-resistant finishes that enhance your property's appearance.",
+      icon: "🏠",
       features: [
-        "IoT integration",
-        "Energy management systems",
-        "Automated building controls",
-        "Smart security systems"
+        "Stucco application and repair",
+        "Exterior painting",
+        "Weatherproofing",
+        "Texture matching"
       ]
     },
     {
-      title: "Tech Integration",
-      description: "Seamlessly integrate cutting-edge technology into existing construction processes without disrupting your workflow.",
-      icon: "🔧",
+      title: "General Construction",
+      description: "Complete construction services from planning to completion. We handle everything from small repairs to major renovations and new construction.",
+      icon: "🔨",
       features: [
-        "Legacy system integration",
-        "Custom software development",
-        "Training and support",
-        "Ongoing maintenance"
+        "New construction",
+        "Renovation projects",
+        "Kitchen and bathroom remodeling",
+        "Project management"
       ]
     }
   ];
@@ -57,14 +57,14 @@ const Home: React.FC = () => {
           <div className="intro-content">
             <div className="intro-text">
               <h2 className="section-title">
-                <span className="texas-primary">Vision Born of</span>
-                <span className="cyber-accent"> Innovation</span>
+                <span className="texas-primary">Built on</span>
+                <span className="cyber-accent"> Solid Foundations</span>
               </h2>
               <p className="intro-description">
-                Web G Construction was founded on the principle that the future of construction 
-                lies in the seamless integration of technology and traditional craftsmanship. 
-                We're not just building structures – we're building the digital infrastructure 
-                that will power Texas for generations to come.
+                Web G Construction has been serving Texas with quality construction services 
+                for over a decade. We specialize in concrete work, stucco application, and 
+                general construction projects. Our commitment to craftsmanship and attention 
+                to detail ensures every project meets the highest standards of quality and durability.
               </p>
               <div className="intro-stats">
                 <div className="stat">
@@ -73,11 +73,11 @@ const Home: React.FC = () => {
                 </div>
                 <div className="stat">
                   <span className="stat-number cyber-text">50+</span>
-                  <span className="stat-label">Smart Buildings</span>
+                  <span className="stat-label">Concrete Projects</span>
                 </div>
                 <div className="stat">
-                  <span className="stat-number cyber-text">99.9%</span>
-                  <span className="stat-label">Uptime Guarantee</span>
+                  <span className="stat-number cyber-text">100%</span>
+                  <span className="stat-label">Satisfaction Rate</span>
                 </div>
               </div>
             </div>
@@ -99,10 +99,10 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">
-              <span className="cyber-text">// CORE SERVICES</span>
+              <span className="cyber-text">// OUR SERVICES</span>
             </h2>
             <p className="section-description">
-              Cutting-edge construction solutions powered by the latest technology
+              Professional construction services with a focus on quality and craftsmanship
             </p>
           </div>
           
@@ -125,10 +125,10 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="cta-content">
             <h2 className="cta-title">
-              Ready to Build the Future?
+              Ready to Start Your Project?
             </h2>
             <p className="cta-description">
-              Join the digital construction revolution. Let's create something extraordinary together.
+              From concrete foundations to stucco finishes, we're here to bring your construction vision to life.
             </p>
             <div className="cta-actions">
               <a href="/contact" className="btn btn-cyber btn-large">
